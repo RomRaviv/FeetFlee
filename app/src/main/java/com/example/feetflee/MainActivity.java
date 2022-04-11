@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
         score = 0;
         txtScore= findViewById(R.id.txt_score);
         hearts = findViewById(R.id.linear_hearts);
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         r = new Runnable() {
             public void run() {
+                int k = manDir.ordinal();
                 gameStep();
                 handler.postDelayed(r, DELAY);
             }
@@ -84,12 +86,14 @@ public class MainActivity extends AppCompatActivity {
             setInvisibleByPosition(gameManager.getFeet().getRow(),gameManager.getFeet().getColumn());
             gameManager.initPlayers();
             gameManager.setStrike(false);
+            directionButtonClicked(DIRECTION.UP);
             setManVisibleByPosition();
             setFeetVisibleByPosition();
         }
         else if(gameManager.isDead()){
             finish();
         }
+
         else {
             setInvisibleByPosition(gameManager.getMan().getRow(), gameManager.getMan().getColumn());
             setInvisibleByPosition(gameManager.getFeet().getRow(), gameManager.getFeet().getColumn());
