@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ToptenListFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/fList_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place1"
+                android:text="CHECK"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"                
+                android:visibility="visible"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"                
+                android:visibility="invisible"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place3"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"
+                android:visibility="invisible"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place4"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"
+                android:visibility="invisible"/>
+                
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place5"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"                
+                android:visibility="invisible"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place6"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"                
+                android:visibility="invisible"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place7"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"
+                android:visibility="invisible"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place8"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"                
+                android:visibility="invisible"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place9"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"                
+                android:visibility="invisible"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fList_BTN_place10"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"                 app:icon="@drawable/ic_winner"
+                app:iconSize="40dp"
+                app:iconTint="@color/teal_700"                
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

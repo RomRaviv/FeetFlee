@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activity_top_ten"
+    android:background="@drawable/img_prison_shower">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_cancel"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        app:backgroundTint="#B5823F"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/animals_LBL_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="-TOP TEN-"
+            android:textColor="#EB0A0A"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/topten_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:padding="24dp" />
+
+        <FrameLayout
+            android:id="@+id/maps_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="24dp"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

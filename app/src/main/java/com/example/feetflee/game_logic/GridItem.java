@@ -1,4 +1,4 @@
-package com.example.feetflee;
+package com.example.feetflee.game_logic;
 
 public class GridItem {
     private int row;
@@ -20,12 +20,14 @@ public class GridItem {
         return dir;
     }
 
-    public void setRow(int row) {
+    public GridItem setRow(int row) {
         this.row = row;
+        return this;
     }
 
-    public void setColumn(int column) {
+    public GridItem setColumn(int column) {
         this.column = column;
+        return this;
     }
 
     public void setDir(int next){
